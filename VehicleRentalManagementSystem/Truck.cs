@@ -14,7 +14,13 @@ namespace VehicleRentalManagementSystem
 
         public override void DisplayDetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Truck Model: {Model}");
+            Console.WriteLine($"Manufacturer: {Manufacturer}");
+            Console.WriteLine($"Year: {Year}");
+            Console.WriteLine($"Rental Price: ${RentalPrice}");
+            Console.WriteLine($"Capacity: {Capacity}");
+            Console.WriteLine($"Truck Type: {TruckType}");
+            Console.WriteLine($"Four Wheel Drive: {(FourWheelDrive ? "Yes" : "No")}");
         }
     }
 }

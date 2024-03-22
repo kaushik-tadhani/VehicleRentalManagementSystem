@@ -15,7 +15,14 @@ namespace VehicleRentalManagementSystem
 
         public override void DisplayDetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Car Model: {Model}");
+            Console.WriteLine($"Manufacturer: {Manufacturer}");
+            Console.WriteLine($"Year: {Year}");
+            Console.WriteLine($"Rental Price: ${RentalPrice}");
+            Console.WriteLine($"Seats: {Seats}");
+            Console.WriteLine($"Engine Type: {EngineType}");
+            Console.WriteLine($"Transmission: {Transmission}");
+            Console.WriteLine($"Convertible: {(Convertible ? "Yes" : "No")}");
         }
     }
 }

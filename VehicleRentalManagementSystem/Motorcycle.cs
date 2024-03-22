@@ -14,7 +14,13 @@ namespace VehicleRentalManagementSystem
 
         public override void DisplayDetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Motorcycle Model: {Model}");
+            Console.WriteLine($"Manufacturer: {Manufacturer}");
+            Console.WriteLine($"Year: {Year}");
+            Console.WriteLine($"Rental Price: ${RentalPrice}");
+            Console.WriteLine($"Engine Capacity: {EngineCapacity}");
+            Console.WriteLine($"Fuel Type: {FuelType}");
+            Console.WriteLine($"Has Fairing: {(HasFairing ? "Yes" : "No")}");
         }
     }
 }
