@@ -4,8 +4,10 @@
     {
         static void Main(string[] args)
         {
+            // Creating a new instance of RentalAgency with a fleet capacity of 10 vehicles
             RentalAgency agency = new RentalAgency(10);
 
+            // Creating car objects
             Car car1 = new Car
             {
                 Model = "Camry",
@@ -30,6 +32,7 @@
                 Convertible = false
             };
 
+            // Creating a truck object
             Truck truck1 = new Truck
             {
                 Model = "F-150",
@@ -41,6 +44,7 @@
                 FourWheelDrive = true
             };
 
+            // Creating motorcycle objects
             Motorcycle bike1 = new Motorcycle
             {
                 Model = "Ninja",
@@ -63,13 +67,14 @@
                 HasFairing = true
             };
 
+            // Adding vehicles to the rental agency's fleet
             agency.AddVehicle(car1);
             agency.AddVehicle(car2);
             agency.AddVehicle(truck1);
             agency.AddVehicle(bike1);
             agency.AddVehicle(bike2);
 
-            // Displaying vehicle details
+            // Displaying vehicle details in the fleet
             foreach (var vehicle in agency.Fleet)
             {
                 if (vehicle != null)
@@ -80,10 +85,10 @@
             }
 
             // Renting a vehicle
-            agency.RentVehicle(car1, 5);
-            agency.RentVehicle(bike2, 2);
+            agency.RentVehicle(car1, 5); // Renting a car for 5 days
+            agency.RentVehicle(bike2, 2); // Renting a motorcycle for 2 days
 
-            // Displaying total revenue
+            // Displaying total revenue earned by the rental agency
             Console.WriteLine($"Total Revenue: ${agency.TotalRevenue}");
         }
     }
